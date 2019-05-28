@@ -1,2 +1,0 @@
-nodemon index.js
-PAUSE

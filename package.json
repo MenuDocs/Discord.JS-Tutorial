@@ -1,0 +1,11 @@
+{
+  "name": "exclusivebot",
+  "version": "1.0.0",
+  "description": "Repo for the [DJS turorials](https://www.youtube.com/watch?v=UcLspwognk0&list=PLWnw41ah3I4ZfNLV3by7nB6JO2WcCc3Wj) on [MenuDocs](https://www.youtube.com/channel/UCpGGFqJP9vYvzFudqnQ-6IA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Spikers",
+  "license": "ISC"
+}

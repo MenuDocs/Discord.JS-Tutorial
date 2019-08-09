@@ -26,7 +26,7 @@ module.exports.run = async (bot, message, args) => {
 
 
 module.exports.config = {
-    name: "serverinfo",
+    name: "meme",
     noalias: "No Aliases",
     description: "Sends a meme from a website!",
     usage: "!meme",

@@ -1,5 +1,5 @@
 const urban = require("urban");
-const { RichEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { cyan } = require("../../colours.json");
 const { stripIndents } = require("common-tags");
 
@@ -22,7 +22,7 @@ module.exports = {
                     if(!res) return message.channel.send("No results found for this topic, sorry!");
                     let { word, definition, example, thumbs_up, thumbs_down, permalink, author} = res;
 
-                        let embed = new RichEmbed()
+                        let embed = new MessageEmbed()
                             .setColor(cyan)
                             .setAuthor(`Urban Dictionary | ${word}`, image)
                             .setThumbnail(image)

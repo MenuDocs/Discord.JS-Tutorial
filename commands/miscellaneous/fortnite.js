@@ -1,4 +1,4 @@
-const { RichEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { cyan } = require("../../colours.json");
 const { stripIndents } = require("common-tags");
 const fortnite = require("simple-fortnite-api"), client = new fortnite("75a8798f-dd48-4ccb-9844-32f1055a5d2e");
@@ -22,7 +22,7 @@ module.exports = {
             const { image, url, username } = data;
             const { scorePerMin, winPercent, kills, score, wins, kd, matches } = data[gametype]
 
-                const embed = new RichEmbed()
+                const embed = new MessageEmbed()
                     .setColor(cyan)
                     .setAuthor(`Epic Games (Fortnite) | ${username}`, image)
                     .setThumbnail(image)

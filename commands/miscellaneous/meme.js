@@ -1,4 +1,4 @@
-const { RichEmbed } = require("discord.js")
+const { MessageEmbed } = require("discord.js")
 const { cyan } = require("../../colours.json");
 const fetch = require('node-fetch');
 
@@ -17,7 +17,7 @@ module.exports = {
     .then(res => res.json()).then(body => {
         if(!body) return message.reply("whoops! I've broke, try again!")
 
-        let mEmbed = new RichEmbed()
+        let mEmbed = new MessageEmbed()
         .setColor(cyan)
         .setAuthor(`${bot.user.username} MEMES!`, message.guild.iconURL)
         .setImage(body.image)

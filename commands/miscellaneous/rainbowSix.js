@@ -1,4 +1,4 @@
-const { RichEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { cyan } = require("../../colours.json");
 const { rainbow: { email, password } } = require("../../botconfig.json");
 const { stripIndents } = require("common-tags");
@@ -45,7 +45,7 @@ module.exports = {
 		platform = Object.keys(platforms).find((key) => platforms[key] === platform).toUpperCase();
 		region = Object.keys(regions).find((key) => regions[key] === region).toUpperCase();
 
-            const embed = new RichEmbed()
+            const embed = new MessageEmbed()
                 .setColor(cyan)
                 .setAuthor(player.username, bot.user.displayAvatarURL)
                 .setDescription(`Stats for the **${region}** region on ${platform}.`)

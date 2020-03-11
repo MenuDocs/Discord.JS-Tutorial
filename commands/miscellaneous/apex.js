@@ -1,4 +1,4 @@
-const { RichEmbed } = require("discord.js");
+const { MessageEmbed } = require("discord.js");
 const { cyan } = require("../../colours.json");
 const { stripIndents } = require("common-tags");
 const API = require("apextab-api"), ApexTab  = API.Apextab_API;
@@ -26,7 +26,7 @@ module.exports = {
                     const player = await ApexTab.getPlayerById(playerResult.aid)
                     const { name, skillratio, visits, avatar, legend, level, kills, headshots, matches, globalrank, utime } = player;
 
-                        const embed = new RichEmbed()
+                        const embed = new MessageEmbed()
                             .setColor(cyan)
                             .setAuthor(`Origin (Apex Legends) | ${name}`, avatar)
                             .setThumbnail(avatar)

@@ -1,0 +1,25 @@
+{
+	"name": "djs-tutorial-master",
+	"version": "2.0.0",
+	"description": "Updated version of the original MenuDocs tutorial series - Discord.js v12",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js"
+	},
+	"author": "T3NED & Piyush",
+	"license": "MIT",
+	"dependencies": {
+		"apextab-api": "^1.0.5",
+		"async": "^3.2.0",
+		"common-tags": "^1.8.0",
+		"dateformat": "^3.0.3",
+		"discord.js": "^12.0.2",
+		"erela.js": "^1.1.7",
+		"node-fetch": "^2.6.0",
+		"overwatch-api": "^0.8.2",
+		"r6api.js": "^1.2.1",
+		"simple-fortnite-api": "^0.1.9",
+		"urban": "^0.3.2"
+	}
+}

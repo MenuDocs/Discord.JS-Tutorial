@@ -1,0 +1,5 @@
+node_modules/
+pnpm-lock.yaml
+
+# until I finish rest
+botconfig.json 
